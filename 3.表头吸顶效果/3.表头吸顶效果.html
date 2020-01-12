@@ -18,10 +18,11 @@
             }
             #head{
                 background-color: #ccc;
+                border:1px solid black;
             }
         </style>
     </head>
-    <body>
+    <body style="height:2500px">
         <header>
             This is header.
         </header>
@@ -46,6 +47,7 @@
             </tbody>
         </table>
         <script type="text/javascript" name="create body">
+        	//自动产生body
             let body = document.getElementById('body');
             let row = document.getElementById("0");
             for(let i = 1 ; i < 50 ; i ++ ){
@@ -55,11 +57,34 @@
                 body.append(son);
             }
         </script>
-        <script type="text/javascript" name="table head above">
-        
-        </script>
-        3
+		<script type="text/javascript" name="table head above">
+			//表头吸顶效果
+		    window.onload = function(){
+		        let head = document.querySelector('#head');
+				let body = document.querySelector('body');
+		        function headAbove (e){
+		        	let num = body.scrollTop - head.parentNode.offsetTop - 3;
+		        	let height = head.parentNode.offsetHeight;
+		        	if(num>0&&num<height){
+		        		head.style.transform = 'translateY(' + num + 'px)';
+					}else{
+						head.style.transform = 'translateY(' + 0 + 'px)';
+					}
+		        }
+		        function debounce(fn,time = 16) {
+    				let timeout = null; 
+				    return function () {
+				        clearTimeout(timeout); 
+				        timeout = setTimeout(() => {
+				            fn.apply(this, arguments);
+				        }, time);
+				    };
+				}
+				window.addEventListener('scroll', debounce(headAbove));
+		    }
 
+		   
+		</script>
 
 
         

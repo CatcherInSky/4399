@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <style>
+            header{
+                width:100%;
+                height:200px;
+                background-color:grey;
+                line-height: 200px;
+                font-size: 30px;
+                color: white;
+                text-align: center;
+            }
+            table {
+                margin:auto;
+                text-align: center;
+                width:600px;
+                border:1px solid black;
+            }
+            #head{
+                background-color: #ccc;
+                border:1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            This is header.
+        </header>
+        <table>
+            <thead id="head">
+                <tr>
+                    <th>head0</th>
+                    <th>head1</th>
+                    <th>head2</th>
+                    <th>head3</th>
+                    <th>head4</th>
+                </tr>
+            </thead>
+            <tbody id = "body">
+                <tr id = "0">
+                    <td>Row 0</td>
+                    <td>text</td>
+                    <td>text</td>
+                    <td>text</td>
+                    <td>text</td>
+                </tr>
+            </tbody>
+        </table>
+        <script type="text/javascript" name="auto_load">
+            let data = [],i = 1;
+            createData(31)
+            i = render(i,31)
+            function createData(num){
+                for(let i=0;i<num;i++){
+                    let item = {
+                        "head1":"text"+i,
+                        "head2":"text"+i,
+                        "head3":"text"+i,
+                        "head4":"text"+i,
+                    }
+                    data.push(item)
+                }
+            }
+            function render(i,times){
+                let body = document.getElementById('body');
+                let row = document.getElementById("0");
+                for( ;i < times ; i ++ ){
+                    let son = row.cloneNode(true);
+                    son.id = i+"";
+                    son.childNodes[1].innerText="Row "+i;
+                    son.childNodes[3].innerText=data[i].head1;
+                    son.childNodes[5].innerText=data[i].head2;
+                    son.childNodes[7].innerText=data[i].head3;
+                    son.childNodes[9].innerText=data[i].head4;
+                    body.append(son);
+                }
+                return i
+            }
+            function debounce(fn,time = 16) {
+    			let timeout = null; 
+				return function () {
+				    clearTimeout(timeout); 
+				    timeout = setTimeout(() => {
+				        fn.apply(this, arguments);
+                    }, time);
+                };
+            }
+            function onBottom(){
+                let body = document.querySelector('body');
+                let scrollTop = body.scrollTop, height = body.offsetHeight, clientHeight = body.clientHeight;
+                if(scrollTop>=height-clientHeight-1){
+                    dataLoad()
+                }
+            }
+            function dataLoad(){
+                createData(10)
+                i = render(i,i+10)
+            }
+            window.onload = function(){
+                window.addEventListener('scroll', debounce(onBottom))
+            }	   
+		</script>     
+    </body>
+</html>
