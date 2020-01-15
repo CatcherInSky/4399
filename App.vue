@@ -2,8 +2,8 @@
   <div>
     地域：
     <RadioGroup v-model="area">
-      <Radio label="unlimited"></Radio>
-      <Radio label="area"></Radio>
+      <Radio label="unlimited">无限制</Radio>
+      <Radio label="area">选择省市</Radio>
     </RadioGroup>
     <Button @click="modalShow = true" v-if="area == 'area'"></Button>
     <Modal title="选择地域" v-model="modalShow" :mask-closable="false">
@@ -19,13 +19,11 @@
         @on-change="checkAllGroupChange"
       >
       <template v-for="regions in region" >
-    
         <Checkbox 
         border
         v-if="regions[1]%1000==0 && regions[1]<100000"
         v-bind:key="regions[1]" :label='regions[0]'>
         </Checkbox>
-        <
       </template>
       </CheckboxGroup>
     </Modal>
@@ -67,7 +65,6 @@ export default {
           this.checkAll = !this.checkAll;
       }
       this.indeterminate = false;
-
       if (this.checkAll) {
           this.checkProvinceGroup = this.regionName.filter((item,index)=>{
             return index < 100000 && this.regionCode[index]%1000==0 
