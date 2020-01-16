@@ -28,7 +28,7 @@ class Node{
             this.parent.setGroup("delete",this.region)
         }
       }else{
-          if(this.checkedGroup.length>0){
+          if(this.indeterminate){
               this.setGroup("clear")
               this.indeterminate = false
               this.checkAll = false
@@ -36,11 +36,12 @@ class Node{
               this.setGroup("fill")
               this.indeterminate = false
               this.checkAll = true
-
           }
       }
-      this.getCheckUp();
       this.getCheckDown();
+      if(this.parent!=null){
+        this.parent.getCheckUp();
+      }
       this.getIndeterminate();
   }
   setGroup(type,region){
@@ -48,6 +49,7 @@ class Node{
         if(this.children!=[]){
             this.children.forEach((item)=>{
                 this.checkedGroup.push(item.region)
+                this.indeterminate = false;
             })
         }else{
             this.getCheckDown.push(this.region)
@@ -62,23 +64,48 @@ class Node{
         }
     }else if(type=="clear"){
         this.checkedGroup=[]
+        this.indeterminate = false;
     }
   }
   childrenIndeterminate(){
       if(this.children.length==0){
           return false
       }else{
-        return this.children.reduce((a,b)=>{
-            return a.indeterminate || b.indeterminate
-        })
+        let re = false
+        for(let i =0;i< this.children.length;i++){
+            re = re ||this.children[i].indeterminate
+        }
+        return re
       }
-}
+    }
+    childrenCheckAll(){
+        if(this.children.length==0){
+            return false
+        }else{
+            let re = true
+        for(let i =0;i< this.children.length;i++){
+            re = re && this.children[i].checkAll
+        }
+        return re
+        //   return this.children.reduce((a,b)=>{
+        //       return a && b.checkAll
+        //   }).checkAll
+        }
+    }
   getIndeterminate(){
-    console.log("indet"+this.region)
-      if( 
-          (this.checkedGroup.length>0 && this.checkedGroup.length<this.children.length)
+      if(this.region=="其他地区"){
+        let re = false
+        for(let i =0;i< this.children.length;i++){
+            re = re ||this.children[i].indeterminate
+            console.log(this.children[i].region+re)
+        }
+      }
+      if(this.children==[]){
+          this.indeterminate = false
+      }else if( 
+          (this.checkedGroup.length>0 && this.checkedGroup.length < this.children.length)
         ||
-          (this.childrenIndeterminate() == true||this.children.checkAll == true)//迭代
+          (this.childrenIndeterminate() == true && this.childrenCheckAll() != true)
         ){
             this.indeterminate = true  
       }else{
@@ -91,34 +118,37 @@ class Node{
       }
   }
   getCheckDown(){
-    if(
-        (this.checkedGroup.length== this.children.length)
-        &&
-        (this.parent.checkedGroup.includes(this.region))
-    ){
-        this.checkAll = true
-        this.setGroup("fill")
-    }else{
-        this.checkAll = false
-        this.setGroup("clear") 
-    }
+      if(this.parent){
+        if(this.parent.checkedGroup.includes(this.region)){
+            this.checkAll = true
+            this.setGroup("fill")
+        }else{
+            this.checkAll = false
+            this.setGroup("clear") 
+        }
+      }
+    
     if(this.children!=[]){
         this.children.forEach((item)=>{
             item.getCheckDown()
         })
     }
   }
+
   getCheckUp(){
       if(this.checkedGroup.length == this.children.length){
           this.checkAll = true
+          this.parent.setGroup("add",this.region)
       }else{
           this.checkAll = false
           if(this.parent!=null){
             this.parent.setGroup("delete",this.region)
             this.parent.getCheckUp();
-            this.parent.getIndeterminate();
           }
       }
+  }
+  getData(){
+      this.total.concat()
   }
 }
 
@@ -284,12 +314,13 @@ for(let i = 0;i<region.length;i++){
 }
 
 
-
-
+tree.changingCheck()
 console.log(tree)
+tree.changingCheck()
+console.log(tree)
+// tree.changingCheck();
 
-huabei.changingCheck()
-console.log(tree)
-huabei.children[2].children[0].changingCheck();
-console.log(tree)
+// // tree.changingCheck();
+// tree.changingCheck();
+// console.log(tree)
 // export default tree;
