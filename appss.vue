@@ -1,79 +1,188 @@
 <template>
-<div>
-    <div style="border-bottom: 1px solid #e9e9e9;padding-bottom:6px;margin-bottom:6px;">
+    <div>
         <Checkbox
-            :index = 0
-            :indeterminate="indeterminate[0]"
-            :value="checkAll[0]"
-            @click.prevent.native="handleCheckAll(0)"
-        >
-            全选
+            :indeterminate="tree.indeterminate"
+            :key="tree.id"
+            :label="tree.region"
+            :value="tree.checkAll"
+            @click.prevent.native="tree.changingCheck(tree)"
+        >  {{tree.region}}
+            <CheckboxGroup
+                v-if="tree.children!=[]"
+                v-model="tree.checkedGroup"
+            >
+                <template  v-for="country in tree.children">
+                    <Checkbox
+                        :indeterminate="country.indeterminate"
+                        :key="country.id"
+                        :label="country.region"
+                        :value="country.checkAll"
+                        @click.prevent.native="country.changingCheck(country)"
+                    >{{country.region}}
+                        <CheckboxGroup
+                            v-if="country.children!=[]"
+                             v-model="country.checkedGroup"
+                        >
+                            <template  v-for="areas in country.children">
+                                <Checkbox
+                                    :key="areas.id"
+                                    :label="areas.region"
+                                    :value="areas.checkAll"
+                                    :indeterminate="areas.indeterminate"
+                                    @click.prevent.native="areas.changingCheck(areas)"
+                                >{{areas.region}}
+                                    <CheckboxGroup
+                                        v-if="areas.children!=[]"
+                                        v-model="areas.checkedGroup"
+                                    >
+                                        <template  v-for="province in areas.children">
+                                            <Checkbox
+                                                :key="province.id"
+                                                :label="province.region"
+                                                :value="province.checkAll"
+                                                :indeterminate="province.indeterminate"
+                                                @click.prevent.native="province.changingCheck(province)"
+                                            >{{province.region}}
+                                                <CheckboxGroup
+                                                    v-if="province.children!=[]"
+                                                    v-model="province.checkedGroup"
+                                                >
+                                                    <template  v-for="city in province.children">
+                                                        <Checkbox
+                                                            :key="city.id"
+                                                            :label="city.region"
+                                                            :value="city.checkAll"
+                                                            :indeterminate="city.indeterminate"
+                                                            @click.prevent.native="city.changingCheck(city)"
+                                                        >
+                                                        </Checkbox>
+                                                    </template>
+                                                </CheckboxGroup>
+                                            </Checkbox>
+                                        </template>
+                                    </CheckboxGroup>
+                                </Checkbox>
+                            </template>
+                        </CheckboxGroup>
+                    </Checkbox>
+                </template>
+            </CheckboxGroup>
         </Checkbox>
     </div>
-    <CheckboxGroup v-model="checkAllGroup[0]" @on-change="checkAllGroupChange">
-        <Checkbox :index = 1 label="香蕉"></Checkbox>
-
-        <CheckboxGroup 
-            v-model="checkAllGroup[1]" 
-            @on-change="checkAllGroupChange"
-            :indeterminate="indeterminate[1]"
-            :value="checkAll[1]"
-            @click.prevent.native="handleCheckAll(1)"
-        >
-            <Checkbox :index = 4 label="葡萄"></Checkbox>
-            <Checkbox :index = 3 label="西瓜"></Checkbox>
-        </CheckboxGroup>
-
-        <Checkbox :index = 2 label="苹果"></Checkbox>
-    </CheckboxGroup>
-</div>
 </template>
 <script>
+    import tree from '../regionAndCode2'
     export default {
         data () {
-            let fruit = ["全部","香蕉","苹果","西瓜","葡萄"]
-            let indeterminate =[false,false,false,false,false]
-            let checkAll =[false,false,false,false,false]
-            let checkAllGroup =[[],[],[],[],[]]
             return {
-                indeterminate,
-                checkAll,
-                checkAllGroup,
-                fruit
+                tree,
             }
         },
-        methods: {
-            handleCheckAll (i) {
-                if (this.indeterminate[i]) {
-                    this.checkAll[i] = false;
-                } else {
-                    this.checkAll[i] = !this.checkAll;
-                }
-                this.indeterminate[i] = false;
 
-                if (this.checkAll[i]) {
-                    if(i==0){
-                        this.checkAllGroup[i] = ["香蕉","苹果"];
-                    }else if(i==1){
-                        this.checkAllGroupp[i] = ["西瓜","葡萄"];
-                    }
-                   
-                } else {
-                    this.checkAllGroup = [];
-                }
-            },
-            checkAllGroupChange (data) {
-                if (data.length === 2) {
-                    this.indeterminate = false;
-                    this.checkAll = true;
-                } else if (data.length > 0) {
-                    this.indeterminate = true;
-                    this.checkAll = false;
-                } else {
-                    this.indeterminate = false;
-                    this.checkAll = false;
-                }
+        methods: {
+
+// isCheck(node){
+//     if(node.indeterminate){
+//       node.checkAll=false
+//     }else{
+//       node.checkAll=!node.checkAll
+//     }
+//     return node.checkAll
+//   },
+//   childrenIndeterminate(node){
+//     if(node.children.length==0){
+//         return false
+//     }else{
+//       let re = false
+//       for(let i =0;i< node.children.length;i++){
+//           re = re || node.children[i].indeterminate
+//       }
+//       return re
+//     }
+//   },
+//   setGroup(node,type,region){
+//     if(type=="fill"){
+//         if(node.children.length){
+//             node.children.forEach((item)=>{
+//                 this.setGroup(node,"add",item.region)
+//             })
+//         }
+//     }else if(type=="delete"){
+//         if(node.checkedGroup.includes(region)){
+//             node.checkedGroup.splice(node.checkedGroup.indexOf(region),1)
+//         }
+//     }else if(type=="add"){
+//         if(!node.checkedGroup.includes(region)){
+//             node.checkedGroup.push(region)
+//         }
+//     }else if(type=="clear"){
+//         node.checkedGroup=[]
+//     }
+//   },
+//   getCheckDown(node){
+//     if(node.checkAll){
+//       this.setGroup(node,"fill")
+//     }else{
+//       this.setGroup(node,"clear")
+//     }
+//     if(this.children.length!=0){
+//       node.children.forEach((item)=>{
+//         item.checkAll = node.checkAll
+//         this.getCheckDown(item)
+//       })
+//     }
+// },
+// getIndeterDown(node){
+//   if(node.children.length>0){
+//     node.children.forEach((item)=>{
+//         item.indeterminate=false
+//         this.getIndeterDown(item)
+//     })
+//   }
+// },
+// getIndeterUp(node){
+//   node.indeterminate = (
+//     (node.checkedGroup.length > 0 ) && 
+//     (node.checkedGroup.length < node.children.length)
+//   ) ||
+//   (this.childrenIndeterminate(node) )
+//   if(node.parent!=null){
+//     this.getIndeterUp(node.parent)
+//   }
+// },
+// getCheckUp(node){
+//   if(node.parent!=null){
+//     if(node.checkAll){
+//       this.setGroup(node.parent,"add",node.region)
+//     }else{
+//       this.setGroup(node.parent,"delete",node.region);
+//     }
+//     if(node.parent.checkedGroup.length == node.parent.children.length){
+//       node.parent.checkAll = true
+//       this.getCheckUp(node.parent)
+//     }else{
+//       node.parent.checkAll = false
+//       this.getCheckUp(node.parent)
+//     }
+    
+//   }
+// },
+//   changingCheck(node){
+//     if(node.parent==null){
+//       this.isCheck(node)
+//       this.getCheckDown(node)
+//       this.getIndeterDown(node)
+//       this.getIndeterUp(node)
+//     }else{
+//       this.isCheck(node)
+//       this.getCheckDown(node)
+//       this.getCheckUp(node)
+//       this.getIndeterDown(node)
+//       this.getIndeterUp(node)
+//     }
+//   }
+
             }
         }
-    }
+
 </script>
