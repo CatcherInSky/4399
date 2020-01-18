@@ -10,164 +10,8 @@ region = region.map((item)=>{
    item[1]=~~item[1]
    return item
 })
-//创建状态树实例
-let tree = new Node(region[0])
-//一级地区
-tree.children.push(new Node(["中国",0],tree))
-tree.children.push(new Node(["国外",null],tree))
-//二级国内地区
-let huabei = new Node(["华北地区",1],tree.children[0])
-let dongbei = new Node(["东北地区",2],tree.children[0])
-let huadong = new Node(["华东地区",3],tree.children[0])
-let huazhong = new Node(["华中地区",4],tree.children[0])
-let huanan = new Node(["华南地区",5],tree.children[0])
-let xinan = new Node(["西南地区",6],tree.children[0])
-let xibei = new Node(["西北地区",7],tree.children[0])
-let qita  = new Node(["其他地区",0],tree.children[0])
-tree.children[0].children.push(huabei)
-tree.children[0].children.push(dongbei)
-tree.children[0].children.push(huadong)
-tree.children[0].children.push(huazhong)
-tree.children[0].children.push(huanan)
-tree.children[0].children.push(xinan)
-tree.children[0].children.push(xibei)
-tree.children[0].children.push(qita)
-for(let i = 0;i<region.length;i++){
-  let item = region[i]
-  if(item[1]>100000&&item[1]<400000){
-    //二级国外地区
-    tree.children[1].children.push(new Node(item,tree.children[1]))
-  }else if(item[1]%1000==0){
-    //三级国内地区，省对应到地区
-    switch(Math.floor(item[1]/1000)){
-      //huabei
-      case 1:
-         huabei.children.push(new Node(item,huabei));
-      break;
-      case 3:
-         huabei.children.push(new Node(item,huabei));
-      break;
-      case 13:
-         huabei.children.push(new Node(item,huabei));
-      break;
-      case 22:
-         huabei.children.push(new Node(item,huabei));
-      break;
-      case 26:
-         huabei.children.push(new Node(item,huabei));
-      break;
-      //dongbei
-      case 15:
-        dongbei.children.push(new Node(item,dongbei))
-      break;
-      case 18:
-        dongbei.children.push(new Node(item,dongbei))
-      break;
-      case 21:
-        dongbei.children.push(new Node(item,dongbei))
-      break
-      //huadong
-      case 2:
-         huadong.children.push(new Node(item,huadong))
-      break;
-      case 5:
-         huadong.children.push(new Node(item,huadong))
-      break;
-      case 9:
-         huadong.children.push(new Node(item,huadong))
-      break;
-      case 19:
-         huadong.children.push(new Node(item,huadong))
-      break;
-      case 20:
-         huadong.children.push(new Node(item,huadong))
-      break;
-      case 25:
-         huadong.children.push(new Node(item,huadong))
-      break;
-      case 32:
-         huadong.children.push(new Node(item,huadong))
-      break;
-      //huazhong
-      case 14:
-         huazhong.children.push(new Node(item,huazhong))
-      break;
-      case 16:
-         huazhong.children.push(new Node(item,huazhong))
-      break;
-      case 17:
-         huazhong.children.push(new Node(item,huazhong))
-      break;
-      //huanan
-      case 4:
-         huanan.children.push(new Node(item,huanan))
-      break;
-      case 8:
-         huanan.children.push(new Node(item,huanan))
-      break;
-      case 12:
-         huanan.children.push(new Node(item,huanan))
-      break;
-      //xinan
-      case 10:
-         xinan.children.push(new Node(item,xinan))
-      break;
-      case 28:
-         xinan.children.push(new Node(item,xinan))
-      break;
-      case 29:
-         xinan.children.push(new Node(item,xinan))
-      break;
-      case 31:
-         xinan.children.push(new Node(item,xinan))
-      break;
-      case 33:
-         xinan.children.push(new Node(item,xinan))
-      break;
-      //xibei
-      case 11:
-        xibei.children.push(new Node(item,xibei))
-      break;
-      case 23:
-        xibei.children.push(new Node(item,xibei))
-      break;
-      case 24:
-        xibei.children.push(new Node(item,xibei))
-      break;
-      case 27:
-        xibei.children.push(new Node(item,xibei))
-      break;
-      case 30:
-        xibei.children.push(new Node(item,xibei))
-      break;
-      //qita
-      case 34:
-         qita.children.push(new Node(item,qita))
-      break;
-      case 35:
-         qita.children.push(new Node(item,qita))
-      break;
-      case 36:
-         qita.children.push(new Node(item,qita))
-      break;
-    }
-  }else{
-    //四级国内地区，市对应到省
-    let areas = tree.children[0].children;
-    for(let i=0 ;i< 8;i++){
-      let provinces = areas[i].children;
-      for(let j = 0;j<provinces.length;j++){
-        let province = provinces[j],isBreak=false;
-        if(item[1]-province.id<1000&&item[1]-province.id>0){
-          province.children.push(new Node(item,province))
-          isBreak=true;
-          break
-        }
-        if(isBreak) break
-      }
-    }
-  }
-}
+
+
 // 树
 class Node{
   constructor(arr,parent=null){
@@ -194,7 +38,6 @@ class Node{
   //checkAll为false indeterminate为true ——
   //checkAll为false indeterminate为false 口
   //不存在同真
-
   isCheck(){
     if(this.indeterminate){
       this.checkAll=false
@@ -216,11 +59,11 @@ class Node{
     }
   }
   //四种管理checkedGroup的方法
-  setGroup(node,type,region){
+  setGroup(type,region){
     if(type=="fill"){
         if(this.children.length){
             this.children.forEach((item)=>{
-                this.setGroup(node,"add",item.region)
+                this.setGroup("add",item.region)
             })
         }
     }else if(type=="delete"){
@@ -236,11 +79,11 @@ class Node{
     }
   }
   //改变checkedGroup checkAll向下传递
-  getCheckDown(node){
+  getCheckDown(){
     if(this.checkAll){
-      this.setGroup(node,"fill")
+      this.setGroup("fill")
     }else{
-      this.setGroup(node,"clear")
+      this.setGroup("clear")
     }
     if(this.children.length!=0){
       this.children.forEach((item)=>{
@@ -269,41 +112,207 @@ getIndeterUp(){
 getCheckUp(){
   if(this.parent!=null){
     if(this.checkAll){
-      this.parent.setGroup(this.parent,"add",this.region)
+      this.parent.setGroup("add",this.region)
     }else{
-      this.parent.setGroup(this.parent,"delete",this.region);
+      this.parent.setGroup("delete",this.region);
     }
     if(this.parent.checkedGroup.length == this.parent.children.length){
       this.parent.checkAll = true
-      this.parent.getCheckUp(this.parent)
+      this.parent.getCheckUp()
     }else{
       this.parent.checkAll = false
-      this.parent.getCheckUp(this.parent)
+      this.parent.getCheckUp()
     }
   }
 }
 //核心，状态被改变时通过这个函数分发事件来管理状态
-  changingCheck(node){
+  changingCheck(){
+    alert(this.region)
     if(this.parent==null){
-      this.isCheck(node)
-      this.getCheckDown(node)
+      this.isCheck()
+      this.getCheckDown()
       this.getIndeterDown()
-      this.getIndeterUp(node)
+      this.getIndeterUp()
     }else if(this.children.length==0){
-      this.isCheck(node)
-      this.getCheckDown(node)
-      this.getCheckUp(node)
+      this.isCheck()
+      this.getCheckDown()
+      this.getCheckUp()
       this.getIndeterDown()
-      this.getIndeterUp(node)
+      this.getIndeterUp()
     }else{
-      this.isCheck(node)
-      this.getCheckDown(node)
-      this.getCheckUp(node)
+      this.isCheck()
+      this.getCheckDown()
+      this.getCheckUp()
       this.getIndeterDown()
-      this.getIndeterUp(node)
+      this.getIndeterUp()
     }
   }
 }
+
+//创建状态树实例
+let tree = new Node(region[0])
+function completeTree(tree){
+    //一级地区
+    tree.children.push(new Node(["中国",0],tree))
+    tree.children.push(new Node(["国外",null],tree))
+    //二级国内地区
+    let huabei = new Node(["华北地区",1],tree.children[0])
+    let dongbei = new Node(["东北地区",2],tree.children[0])
+    let huadong = new Node(["华东地区",3],tree.children[0])
+    let huazhong = new Node(["华中地区",4],tree.children[0])
+    let huanan = new Node(["华南地区",5],tree.children[0])
+    let xinan = new Node(["西南地区",6],tree.children[0])
+    let xibei = new Node(["西北地区",7],tree.children[0])
+    let qita  = new Node(["其他地区",0],tree.children[0])
+    tree.children[0].children.push(huabei)
+    tree.children[0].children.push(dongbei)
+    tree.children[0].children.push(huadong)
+    tree.children[0].children.push(huazhong)
+    tree.children[0].children.push(huanan)
+    tree.children[0].children.push(xinan)
+    tree.children[0].children.push(xibei)
+    tree.children[0].children.push(qita)
+    for(let i = 0;i<region.length;i++){
+      let item = region[i]
+      if(item[1]>100000&&item[1]<400000){
+        //二级国外地区
+        tree.children[1].children.push(new Node(item,tree.children[1]))
+      }else if(item[1]%1000==0){
+        //三级国内地区，省对应到地区
+        switch(Math.floor(item[1]/1000)){
+          //huabei
+          case 1:
+             huabei.children.push(new Node(item,huabei));
+          break;
+          case 3:
+             huabei.children.push(new Node(item,huabei));
+          break;
+          case 13:
+             huabei.children.push(new Node(item,huabei));
+          break;
+          case 22:
+             huabei.children.push(new Node(item,huabei));
+          break;
+          case 26:
+             huabei.children.push(new Node(item,huabei));
+          break;
+          //dongbei
+          case 15:
+            dongbei.children.push(new Node(item,dongbei))
+          break;
+          case 18:
+            dongbei.children.push(new Node(item,dongbei))
+          break;
+          case 21:
+            dongbei.children.push(new Node(item,dongbei))
+          break
+          //huadong
+          case 2:
+             huadong.children.push(new Node(item,huadong))
+          break;
+          case 5:
+             huadong.children.push(new Node(item,huadong))
+          break;
+          case 9:
+             huadong.children.push(new Node(item,huadong))
+          break;
+          case 19:
+             huadong.children.push(new Node(item,huadong))
+          break;
+          case 20:
+             huadong.children.push(new Node(item,huadong))
+          break;
+          case 25:
+             huadong.children.push(new Node(item,huadong))
+          break;
+          case 32:
+             huadong.children.push(new Node(item,huadong))
+          break;
+          //huazhong
+          case 14:
+             huazhong.children.push(new Node(item,huazhong))
+          break;
+          case 16:
+             huazhong.children.push(new Node(item,huazhong))
+          break;
+          case 17:
+             huazhong.children.push(new Node(item,huazhong))
+          break;
+          //huanan
+          case 4:
+             huanan.children.push(new Node(item,huanan))
+          break;
+          case 8:
+             huanan.children.push(new Node(item,huanan))
+          break;
+          case 12:
+             huanan.children.push(new Node(item,huanan))
+          break;
+          //xinan
+          case 10:
+             xinan.children.push(new Node(item,xinan))
+          break;
+          case 28:
+             xinan.children.push(new Node(item,xinan))
+          break;
+          case 29:
+             xinan.children.push(new Node(item,xinan))
+          break;
+          case 31:
+             xinan.children.push(new Node(item,xinan))
+          break;
+          case 33:
+             xinan.children.push(new Node(item,xinan))
+          break;
+          //xibei
+          case 11:
+            xibei.children.push(new Node(item,xibei))
+          break;
+          case 23:
+            xibei.children.push(new Node(item,xibei))
+          break;
+          case 24:
+            xibei.children.push(new Node(item,xibei))
+          break;
+          case 27:
+            xibei.children.push(new Node(item,xibei))
+          break;
+          case 30:
+            xibei.children.push(new Node(item,xibei))
+          break;
+          //qita
+          case 34:
+             qita.children.push(new Node(item,qita))
+          break;
+          case 35:
+             qita.children.push(new Node(item,qita))
+          break;
+          case 36:
+             qita.children.push(new Node(item,qita))
+          break;
+        }
+      }else{
+        //四级国内地区，市对应到省
+        let areas = tree.children[0].children;
+        for(let i=0 ;i< 8;i++){
+          let provinces = areas[i].children;
+          for(let j = 0;j<provinces.length;j++){
+            let province = provinces[j],isBreak=false;
+            if(item[1]-province.id<1000&&item[1]-province.id>0){
+              province.children.push(new Node(item,province))
+              isBreak=true;
+              break
+            }
+            if(isBreak) break
+          }
+        }
+      }
+    }
+}
+completeTree(tree)
+
+
+
 
 
 export default tree;

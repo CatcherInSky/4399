@@ -5,7 +5,7 @@
             :key="tree.id"
             :label="tree.region"
             :value="tree.checkAll"
-            @click.prevent.native="tree.changingCheck(tree)"
+            @click.prevent.native.stop="tree.changingCheck()"
         >  {{tree.region}}
             <CheckboxGroup
                 v-if="tree.children!=[]"
@@ -17,7 +17,8 @@
                         :key="country.id"
                         :label="country.region"
                         :value="country.checkAll"
-                        @click.prevent.native="country.changingCheck(country)"
+                        v-model="country.checkedGroup"
+                        @click.prevent.native.stop="country.changingCheck()"
                     >{{country.region}}
                         <CheckboxGroup
                             v-if="country.children!=[]"
@@ -29,7 +30,8 @@
                                     :label="areas.region"
                                     :value="areas.checkAll"
                                     :indeterminate="areas.indeterminate"
-                                    @click.prevent.native="areas.changingCheck(areas)"
+                                    v-model="areas.checkedGroup"
+                                    @click.prevent.native.stop="areas.changingCheck()"
                                 >{{areas.region}}
                                     <CheckboxGroup
                                         v-if="areas.children!=[]"
@@ -41,7 +43,8 @@
                                                 :label="province.region"
                                                 :value="province.checkAll"
                                                 :indeterminate="province.indeterminate"
-                                                @click.prevent.native="province.changingCheck(province)"
+                                                v-model="province.checkedGroup"
+                                                @click.prevent.native.stop="province.changingCheck()"
                                             >{{province.region}}
                                                 <CheckboxGroup
                                                     v-if="province.children!=[]"
@@ -52,8 +55,8 @@
                                                             :key="city.id"
                                                             :label="city.region"
                                                             :value="city.checkAll"
-                                                            :indeterminate="city.indeterminate"
-                                                            @click.prevent.native="city.changingCheck(city)"
+                                                            v-model="city.checkAll"
+                                                            @click.prevent.native.stop="city.changingCheck()"
                                                         >
                                                         </Checkbox>
                                                     </template>
