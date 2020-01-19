@@ -1,16 +1,21 @@
 <template>
     <div>
+        <div class="allRegion">
         <Checkbox
             :indeterminate="tree.indeterminate"
             :key="tree.id"
             :label="tree.region"
             :value="tree.checkAll"
+            
             @click.prevent.native.stop="tree.changingCheck()"
-        >  {{tree.region}}
-            <CheckboxGroup
-                v-if="tree.children!=[]"
-                v-model="tree.checkedGroup"
             >
+            {{tree.region}}
+        </Checkbox>
+        </div>
+        <CheckboxGroup
+            v-if="tree.children!=[]"
+            v-model="tree.checkedGroup"
+            style="countryRegions">
                 <template  v-for="country in tree.children">
                     <Checkbox
                         :indeterminate="country.indeterminate"
@@ -19,11 +24,14 @@
                         :value="country.checkAll"
                         v-model="country.checkedGroup"
                         @click.prevent.native.stop="country.changingCheck()"
-                    >{{country.region}}
-                        <CheckboxGroup
-                            v-if="country.children!=[]"
-                             v-model="country.checkedGroup"
-                        >
+                        style="countryRegion">
+                        {{country.region}}
+                    </Checkbox>
+                    <CheckboxGroup
+                        :key="country.id"
+                        v-if="country.children!=[]"
+                        v-model="country.checkedGroup"
+                        style="areasRegions">
                             <template  v-for="areas in country.children">
                                 <Checkbox
                                     :key="areas.id"
@@ -32,160 +40,103 @@
                                     :indeterminate="areas.indeterminate"
                                     v-model="areas.checkedGroup"
                                     @click.prevent.native.stop="areas.changingCheck()"
-                                >{{areas.region}}
-                                    <CheckboxGroup
-                                        v-if="areas.children!=[]"
-                                        v-model="areas.checkedGroup"
-                                    >
+                                    style="areasRegion"
+                                >{{areas.region}}</Checkbox>
+                                <CheckboxGroup
+                                    :key="areas.id"
+                                    v-if="areas.children!=[]"
+                                    v-model="areas.checkedGroup"
+                                    style="provinceRegions">
                                         <template  v-for="province in areas.children">
-                                            <Checkbox
-                                                :key="province.id"
-                                                :label="province.region"
-                                                :value="province.checkAll"
-                                                :indeterminate="province.indeterminate"
-                                                v-model="province.checkedGroup"
-                                                @click.prevent.native.stop="province.changingCheck()"
-                                            >{{province.region}}
-                                                <CheckboxGroup
-                                                    v-if="province.children!=[]"
+                                            <template v-if="province.children.length!=0">
+                                                <Poptip 
+                                                    :key="province.id" 
+                                                    trigger="hover" 
+                                                    style="provinceRegionPoptip"
+                                                    >
+                                                    <Checkbox
+                                                        :key="province.id"
+                                                        :label="province.region"
+                                                        :value="province.checkAll"
+                                                        :indeterminate="province.indeterminate"
+                                                        v-model="province.checkedGroup"
+                                                        @click.prevent.native.stop="province.changingCheck()"
+                                                        border
+                                                        style="provinceRegion">
+                                                        {{province.region}}
+                                                    </Checkbox>
+                                                    <CheckboxGroup
+                                                        :key="province.id"
+                                                        v-model="province.checkedGroup"
+                                                        style="cityRegions"
+                                                        slot="content">
+                                                        <template  v-for="city in province.children">
+                                                            <Checkbox
+                                                                :key="city.id"
+                                                                :label="city.region"
+                                                                :value="city.checkAll"
+                                                                v-model="city.checkAll"
+                                                                style="cityRegion"
+                                                                @click.prevent.native.stop="city.changingCheck()"
+                                                            >
+                                                            </Checkbox>
+                                                        </template>
+                                                    </CheckboxGroup>
+                                                </Poptip>
+                                            </template>
+                                            <template v-else>
+                                                <Checkbox
+                                                    :key="province.id"
+                                                    :label="province.region"
+                                                    :value="province.checkAll"
+                                                    :indeterminate="province.indeterminate"
+                                                    style="provinceRegion"
+                                                    border
                                                     v-model="province.checkedGroup"
-                                                >
-                                                    <template  v-for="city in province.children">
-                                                        <Checkbox
-                                                            :key="city.id"
-                                                            :label="city.region"
-                                                            :value="city.checkAll"
-                                                            v-model="city.checkAll"
-                                                            @click.prevent.native.stop="city.changingCheck()"
-                                                        >
-                                                        </Checkbox>
-                                                    </template>
-                                                </CheckboxGroup>
-                                            </Checkbox>
+                                                    @click.prevent.native.stop="province.changingCheck()"
+                                                >{{province.region}}
+                                                </Checkbox>
+                                             </template>
                                         </template>
                                     </CheckboxGroup>
-                                </Checkbox>
+                                
                             </template>
-                        </CheckboxGroup>
-                    </Checkbox>
-                </template>
-            </CheckboxGroup>
-        </Checkbox>
+                    </CheckboxGroup>
+            </template>
+        </CheckboxGroup>
     </div>
 </template>
 <script>
-    import tree from '../regionAndCode2'
+    import tree from './regionAndCode2'
     export default {
         data () {
             return {
                 tree,
             }
         },
-
         methods: {
-
-// isCheck(node){
-//     if(node.indeterminate){
-//       node.checkAll=false
-//     }else{
-//       node.checkAll=!node.checkAll
-//     }
-//     return node.checkAll
-//   },
-//   childrenIndeterminate(node){
-//     if(node.children.length==0){
-//         return false
-//     }else{
-//       let re = false
-//       for(let i =0;i< node.children.length;i++){
-//           re = re || node.children[i].indeterminate
-//       }
-//       return re
-//     }
-//   },
-//   setGroup(node,type,region){
-//     if(type=="fill"){
-//         if(node.children.length){
-//             node.children.forEach((item)=>{
-//                 this.setGroup(node,"add",item.region)
-//             })
-//         }
-//     }else if(type=="delete"){
-//         if(node.checkedGroup.includes(region)){
-//             node.checkedGroup.splice(node.checkedGroup.indexOf(region),1)
-//         }
-//     }else if(type=="add"){
-//         if(!node.checkedGroup.includes(region)){
-//             node.checkedGroup.push(region)
-//         }
-//     }else if(type=="clear"){
-//         node.checkedGroup=[]
-//     }
-//   },
-//   getCheckDown(node){
-//     if(node.checkAll){
-//       this.setGroup(node,"fill")
-//     }else{
-//       this.setGroup(node,"clear")
-//     }
-//     if(this.children.length!=0){
-//       node.children.forEach((item)=>{
-//         item.checkAll = node.checkAll
-//         this.getCheckDown(item)
-//       })
-//     }
-// },
-// getIndeterDown(node){
-//   if(node.children.length>0){
-//     node.children.forEach((item)=>{
-//         item.indeterminate=false
-//         this.getIndeterDown(item)
-//     })
-//   }
-// },
-// getIndeterUp(node){
-//   node.indeterminate = (
-//     (node.checkedGroup.length > 0 ) && 
-//     (node.checkedGroup.length < node.children.length)
-//   ) ||
-//   (this.childrenIndeterminate(node) )
-//   if(node.parent!=null){
-//     this.getIndeterUp(node.parent)
-//   }
-// },
-// getCheckUp(node){
-//   if(node.parent!=null){
-//     if(node.checkAll){
-//       this.setGroup(node.parent,"add",node.region)
-//     }else{
-//       this.setGroup(node.parent,"delete",node.region);
-//     }
-//     if(node.parent.checkedGroup.length == node.parent.children.length){
-//       node.parent.checkAll = true
-//       this.getCheckUp(node.parent)
-//     }else{
-//       node.parent.checkAll = false
-//       this.getCheckUp(node.parent)
-//     }
-    
-//   }
-// },
-//   changingCheck(node){
-//     if(node.parent==null){
-//       this.isCheck(node)
-//       this.getCheckDown(node)
-//       this.getIndeterDown(node)
-//       this.getIndeterUp(node)
-//     }else{
-//       this.isCheck(node)
-//       this.getCheckDown(node)
-//       this.getCheckUp(node)
-//       this.getIndeterDown(node)
-//       this.getIndeterUp(node)
-//     }
-//   }
 
             }
         }
-
 </script>
+<style scoped>
+    .allRegion >>> .ivu-checkbox-wrapper{
+        background: grey;
+        font-size:20px;
+    }
+    
+    .countryRegion{
+        background:grey;
+        display: flex;
+    }
+    .areasRegions{
+        width:500px;
+        display: flex;
+    }
+    .areasRegion{
+        width:30%；
+    }
+    .provinceRegions{
+        width:70%;
+    }
+</style>
