@@ -1,5 +1,3 @@
-
-
 <template>
   <div>
     <div class="ydx-multicheckbox-first-container">
@@ -202,6 +200,7 @@
             node:tree,
             parent:null
           },list)
+          this.rebuildState(tree)
           window.console.log(tree)
           this.tree = tree
           this.$forceUpdate();
@@ -275,6 +274,25 @@
               node:child,
               parent:node
             },list)
+          }
+        }
+      },
+      /**
+       * 
+       */
+      rebuildState(node){
+        if(node.checkAll){
+          this.getCheckDown(node);
+          if (node.parent != null) {
+            this.getCheckUp(node);
+          }
+          this.getIndeterDown(node);
+          this.getIndeterUp(node);
+        }else{
+          if (node.children.length != 0) {
+            node.children.forEach(item => {
+              this.rebuildState(item)
+            });
           }
         }
       },
@@ -389,10 +407,8 @@
       isCheck(node) {
         if (node.indeterminate) {
           this.changeCheckAll(node, false);
-          // node.checkAll=false
         } else {
           this.changeCheckAll(node, !node.checkAll);
-          // node.checkAll=!node.checkAll
         }
         return node.checkAll;
       },
