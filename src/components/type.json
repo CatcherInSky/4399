@@ -1,0 +1,348 @@
+{
+    "id": -1,
+    "name": "",
+    
+    "children": [{
+        "id": 0,
+        "name": "全部",
+        
+        "children": [{
+            "id": 1,
+            "name": "游戏",
+            
+            "children": [{
+                "id": 11,
+                "name": "游戏题材",
+               
+                "children": []
+            },{
+                "id": 12,
+                "name": "游戏类型",
+                
+                "children": []
+            },{
+                "id": 13,
+                "name": "游戏载体",
+                
+                "children": []
+            },{
+                "id": 14,
+                "name": "游戏开发商",
+               
+                "children": []
+            }]
+        },{
+            "id": 2,
+            "name": "房产",
+            
+            "children":  [
+                {
+                    "id": 1000,
+                    "name": "北京",
+                    
+                    
+                    "children": []
+                },
+                {
+                    "id": 3000,
+                    "name": "天津",
+                    
+                    
+                    "children": []
+                },
+                {
+                    "id": 13000,
+                    "name": "河北",
+                    
+                    
+                    "children": [
+                        {
+                            "id": 13304,
+                            "name": "保定",
+                            
+                            
+                            "children": []
+                        },
+                        {
+                            "id": 13305,
+                            "name": "沧州",
+                            
+                            
+                            "children": []
+                        },
+                        {
+                            "id": 13306,
+                            "name": "承德",
+                            
+                            
+                            "children": []
+                        },
+                        {
+                            "id": 13307,
+                            "name": "廊坊",
+                            
+                            
+                            "children": []
+                        },
+                        {
+                            "id": 13325,
+                            "name": "秦皇岛",
+                            
+                            
+                            "children": []
+                        },
+                        {
+                            "id": 13326,
+                            "name": "邢台",
+                            
+                            
+                            "children": []
+                        },
+                        {
+                            "id": 13327,
+                            "name": "石家庄",
+                            
+                            
+                            "children": []
+                        },
+                        {
+                            "id": 13329,
+                            "name": "唐山",
+                            
+                            
+                            "children": []
+                        },
+                        {
+                            "id": 13330,
+                            "name": "邯郸",
+                            
+                            
+                            "children": []
+                        },
+                        {
+                            "id": 13331,
+                            "name": "张家口",
+                            
+                            
+                            "children": []
+                        },
+                        {
+                            "id": 13332,
+                            "name": "衡水",
+                            
+                            
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "id": 22000,
+                    "name": "内蒙古",
+                    
+                    
+                    "children": [
+                        {
+                            "id": 22158,
+                            "name": "赤峰",
+                            
+                            
+                            "children": []
+                        },
+                        {
+                            "id": 22159,
+                            "name": "阿拉善盟",
+                            
+                            
+                            "children": []
+                        },
+                        {
+                            "id": 22160,
+                            "name": "兴安盟",
+                            
+                            
+                            "children": []
+                        },
+                        {
+                            "id": 22161,
+                            "name": "通辽",
+                            
+                            
+                            "children": []
+                        },
+                        {
+                            "id": 22162,
+                            "name": "巴彦淖尔",
+                            
+                            
+                            "children": []
+                        },
+                        {
+                            "id": 22163,
+                            "name": "乌兰察布",
+                            
+                            
+                            "children": []
+                        },
+                        {
+                            "id": 22164,
+                            "name": "乌海",
+                            
+                            
+                            "children": []
+                        },
+                        {
+                            "id": 22165,
+                            "name": "锡林郭勒盟",
+                            
+                            
+                            "children": []
+                        },
+                        {
+                            "id": 22166,
+                            "name": "呼伦贝尔",
+                            
+                            
+                            "children": []
+                        },
+                        {
+                            "id": 22167,
+                            "name": "呼和浩特",
+                            
+                            
+                            "children": []
+                        },
+                        {
+                            "id": 22168,
+                            "name": "鄂尔多斯",
+                            
+                            
+                            "children": []
+                        },
+                        {
+                            "id": 22169,
+                            "name": "包头",
+                            
+                            
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "id": 26000,
+                    "name": "山西",
+                    
+                    
+                    "children": [
+                        {
+                            "id": 26205,
+                            "name": "晋城",
+                            
+                            
+                            "children": []
+                        },
+                        {
+                            "id": 26206,
+                            "name": "晋中",
+                            
+                            
+                            "children": []
+                        },
+                        {
+                            "id": 26209,
+                            "name": "长治",
+                            
+                            
+                            "children": []
+                        },
+                        {
+                            "id": 26210,
+                            "name": "吕梁",
+                            
+                            
+                            "children": []
+                        },
+                        {
+                            "id": 26211,
+                            "name": "临汾",
+                            
+                            
+                            "children": []
+                        },
+                        {
+                            "id": 26212,
+                            "name": "忻州",
+                            
+                            
+                            "children": []
+                        },
+                        {
+                            "id": 26213,
+                            "name": "朔州",
+                            
+                            
+                            "children": []
+                        },
+                        {
+                            "id": 26214,
+                            "name": "太原",
+                            
+                            
+                            "children": []
+                        },
+                        {
+                            "id": 26215,
+                            "name": "阳泉",
+                            
+                            
+                            "children": []
+                        },
+                        {
+                            "id": 26216,
+                            "name": "运城",
+                            
+                            
+                            "children": []
+                        },
+                        {
+                            "id": 26217,
+                            "name": "大同",
+                            
+                            
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        },{
+            "id": 3,
+            "name": "汽车",
+            
+            "children": []
+        },{
+            "id": 4,
+            "name": "金融",
+            
+            "children": []
+        },{
+            "id": 5,
+            "name": "教育",
+            
+            "children": []
+        },{
+            "id": 6,
+            "name": "旅游",
+            
+            "children": []
+        },{
+            "id": 7,
+            "name": "文化娱乐",
+           
+            "children": []
+        },{
+            "id": 8,
+            "name": "资讯",
+            
+            "children": []
+        }]
+    }]
+}
