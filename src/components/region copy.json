@@ -1,0 +1,2875 @@
+
+{
+    "id": 9999999,
+    "name": "全部地域",
+    
+    "parent": null,
+    "children": [
+        {
+            "id": 0,
+            "name": "中国",
+            
+            "parent": 9999999,
+            "children": [
+                {
+                    "id": 10,
+                    "name": "华北地区",
+                    
+                    "parent": 0,
+                    "children": [
+                        {
+                            "id": 1000,
+                            "name": "北京",
+                            
+                            "parent": 10,
+                            "children": []
+                        },
+                        {
+                            "id": 3000,
+                            "name": "天津",
+                            
+                            "parent": 10,
+                            "children": []
+                        },
+                        {
+                            "id": 13000,
+                            "name": "河北",
+                            
+                            "parent": 10,
+                            "children": [
+                                {
+                                    "id": 13304,
+                                    "name": "保定",
+                                    
+                                    "parent": 13000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 13305,
+                                    "name": "沧州",
+                                    
+                                    "parent": 13000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 13306,
+                                    "name": "承德",
+                                    
+                                    "parent": 13000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 13307,
+                                    "name": "廊坊",
+                                    
+                                    "parent": 13000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 13325,
+                                    "name": "秦皇岛",
+                                    
+                                    "parent": 13000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 13326,
+                                    "name": "邢台",
+                                    
+                                    "parent": 13000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 13327,
+                                    "name": "石家庄",
+                                    
+                                    "parent": 13000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 13329,
+                                    "name": "唐山",
+                                    
+                                    "parent": 13000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 13330,
+                                    "name": "邯郸",
+                                    
+                                    "parent": 13000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 13331,
+                                    "name": "张家口",
+                                    
+                                    "parent": 13000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 13332,
+                                    "name": "衡水",
+                                    
+                                    "parent": 13000,
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": 22000,
+                            "name": "内蒙古",
+                            
+                            "parent": 10,
+                            "children": [
+                                {
+                                    "id": 22158,
+                                    "name": "赤峰",
+                                    
+                                    "parent": 22000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 22159,
+                                    "name": "阿拉善盟",
+                                    
+                                    "parent": 22000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 22160,
+                                    "name": "兴安盟",
+                                    
+                                    "parent": 22000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 22161,
+                                    "name": "通辽",
+                                    
+                                    "parent": 22000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 22162,
+                                    "name": "巴彦淖尔",
+                                    
+                                    "parent": 22000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 22163,
+                                    "name": "乌兰察布",
+                                    
+                                    "parent": 22000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 22164,
+                                    "name": "乌海",
+                                    
+                                    "parent": 22000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 22165,
+                                    "name": "锡林郭勒盟",
+                                    
+                                    "parent": 22000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 22166,
+                                    "name": "呼伦贝尔",
+                                    
+                                    "parent": 22000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 22167,
+                                    "name": "呼和浩特",
+                                    
+                                    "parent": 22000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 22168,
+                                    "name": "鄂尔多斯",
+                                    
+                                    "parent": 22000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 22169,
+                                    "name": "包头",
+                                    
+                                    "parent": 22000,
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": 26000,
+                            "name": "山西",
+                            
+                            "parent": 10,
+                            "children": [
+                                {
+                                    "id": 26205,
+                                    "name": "晋城",
+                                    
+                                    "parent": 26000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 26206,
+                                    "name": "晋中",
+                                    
+                                    "parent": 26000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 26209,
+                                    "name": "长治",
+                                    
+                                    "parent": 26000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 26210,
+                                    "name": "吕梁",
+                                    
+                                    "parent": 26000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 26211,
+                                    "name": "临汾",
+                                    
+                                    "parent": 26000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 26212,
+                                    "name": "忻州",
+                                    
+                                    "parent": 26000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 26213,
+                                    "name": "朔州",
+                                    
+                                    "parent": 26000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 26214,
+                                    "name": "太原",
+                                    
+                                    "parent": 26000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 26215,
+                                    "name": "阳泉",
+                                    
+                                    "parent": 26000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 26216,
+                                    "name": "运城",
+                                    
+                                    "parent": 26000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 26217,
+                                    "name": "大同",
+                                    
+                                    "parent": 26000,
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 20,
+                    "name": "东北地区",
+                    
+                    "parent": 0,
+                    "children": [
+                        {
+                            "id": 15000,
+                            "name": "黑龙江",
+                            
+                            "parent": 20,
+                            "children": [
+                                {
+                                    "id": 15333,
+                                    "name": "鸡西",
+                                    
+                                    "parent": 15000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 15334,
+                                    "name": "佳木斯",
+                                    
+                                    "parent": 15000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 15335,
+                                    "name": "哈尔滨",
+                                    
+                                    "parent": 15000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 15336,
+                                    "name": "牡丹江",
+                                    
+                                    "parent": 15000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 15337,
+                                    "name": "齐齐哈尔",
+                                    
+                                    "parent": 15000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 15338,
+                                    "name": "七台河",
+                                    
+                                    "parent": 15000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 15339,
+                                    "name": "绥化",
+                                    
+                                    "parent": 15000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 15340,
+                                    "name": "双鸭山",
+                                    
+                                    "parent": 15000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 15341,
+                                    "name": "伊春",
+                                    
+                                    "parent": 15000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 15342,
+                                    "name": "大庆",
+                                    
+                                    "parent": 15000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 15343,
+                                    "name": "大兴安岭",
+                                    
+                                    "parent": 15000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 15344,
+                                    "name": "鹤岗",
+                                    
+                                    "parent": 15000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 15345,
+                                    "name": "黑河",
+                                    
+                                    "parent": 15000,
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": 18000,
+                            "name": "吉林",
+                            
+                            "parent": 20,
+                            "children": [
+                                {
+                                    "id": 18038,
+                                    "name": "吉林",
+                                    
+                                    "parent": 18000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 18039,
+                                    "name": "白城",
+                                    
+                                    "parent": 18000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 18040,
+                                    "name": "长春",
+                                    
+                                    "parent": 18000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 18041,
+                                    "name": "辽源",
+                                    
+                                    "parent": 18000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 18042,
+                                    "name": "白山",
+                                    
+                                    "parent": 18000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 18043,
+                                    "name": "四平",
+                                    
+                                    "parent": 18000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 18044,
+                                    "name": "松原",
+                                    
+                                    "parent": 18000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 18045,
+                                    "name": "通化",
+                                    
+                                    "parent": 18000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 18047,
+                                    "name": "延边",
+                                    
+                                    "parent": 18000,
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": 21000,
+                            "name": "辽宁",
+                            
+                            "parent": 20,
+                            "children": [
+                                {
+                                    "id": 21144,
+                                    "name": "丹东",
+                                    
+                                    "parent": 21000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 21145,
+                                    "name": "本溪",
+                                    
+                                    "parent": 21000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 21146,
+                                    "name": "锦州",
+                                    
+                                    "parent": 21000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 21147,
+                                    "name": "朝阳",
+                                    
+                                    "parent": 21000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 21148,
+                                    "name": "辽阳",
+                                    
+                                    "parent": 21000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 21149,
+                                    "name": "盘锦",
+                                    
+                                    "parent": 21000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 21150,
+                                    "name": "阜新",
+                                    
+                                    "parent": 21000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 21151,
+                                    "name": "鞍山",
+                                    
+                                    "parent": 21000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 21152,
+                                    "name": "抚顺",
+                                    
+                                    "parent": 21000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 21153,
+                                    "name": "沈阳",
+                                    
+                                    "parent": 21000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 21154,
+                                    "name": "铁岭",
+                                    
+                                    "parent": 21000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 21155,
+                                    "name": "大连",
+                                    
+                                    "parent": 21000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 21156,
+                                    "name": "营口",
+                                    
+                                    "parent": 21000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 21157,
+                                    "name": "葫芦岛",
+                                    
+                                    "parent": 21000,
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 30,
+                    "name": "华东地区",
+                    
+                    "parent": 0,
+                    "children": [
+                        {
+                            "id": 2000,
+                            "name": "上海",
+                            
+                            "parent": 30,
+                            "children": []
+                        },
+                        {
+                            "id": 5000,
+                            "name": "福建",
+                            
+                            "parent": 30,
+                            "children": [
+                                {
+                                    "id": 5048,
+                                    "name": "莆田",
+                                    
+                                    "parent": 5000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 5049,
+                                    "name": "南平",
+                                    
+                                    "parent": 5000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 5050,
+                                    "name": "龙岩",
+                                    
+                                    "parent": 5000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 5051,
+                                    "name": "宁德",
+                                    
+                                    "parent": 5000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 5052,
+                                    "name": "泉州",
+                                    
+                                    "parent": 5000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 5066,
+                                    "name": "三明",
+                                    
+                                    "parent": 5000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 5070,
+                                    "name": "厦门",
+                                    
+                                    "parent": 5000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 5080,
+                                    "name": "漳州",
+                                    
+                                    "parent": 5000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 5081,
+                                    "name": "福州",
+                                    
+                                    "parent": 5000,
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": 9000,
+                            "name": "安徽",
+                            
+                            "parent": 30,
+                            "children": [
+                                {
+                                    "id": 9127,
+                                    "name": "淮北",
+                                    
+                                    "parent": 9000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 9128,
+                                    "name": "安庆",
+                                    
+                                    "parent": 9000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 9129,
+                                    "name": "巢湖",
+                                    
+                                    "parent": 9000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 9130,
+                                    "name": "池州",
+                                    
+                                    "parent": 9000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 9131,
+                                    "name": "滁州",
+                                    
+                                    "parent": 9000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 9132,
+                                    "name": "黄山",
+                                    
+                                    "parent": 9000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 9133,
+                                    "name": "淮南",
+                                    
+                                    "parent": 9000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 9134,
+                                    "name": "马鞍山",
+                                    
+                                    "parent": 9000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 9135,
+                                    "name": "六安",
+                                    
+                                    "parent": 9000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 9136,
+                                    "name": "宣城",
+                                    
+                                    "parent": 9000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 9137,
+                                    "name": "宿州",
+                                    
+                                    "parent": 9000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 9138,
+                                    "name": "铜陵",
+                                    
+                                    "parent": 9000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 9139,
+                                    "name": "芜湖",
+                                    
+                                    "parent": 9000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 9140,
+                                    "name": "阜阳",
+                                    
+                                    "parent": 9000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 9141,
+                                    "name": "蚌埠",
+                                    
+                                    "parent": 9000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 9142,
+                                    "name": "合肥",
+                                    
+                                    "parent": 9000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 9143,
+                                    "name": "亳州",
+                                    
+                                    "parent": 9000,
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": 19000,
+                            "name": "江苏",
+                            
+                            "parent": 30,
+                            "children": [
+                                {
+                                    "id": 19053,
+                                    "name": "淮安",
+                                    
+                                    "parent": 19000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 19054,
+                                    "name": "常州",
+                                    
+                                    "parent": 19000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 19055,
+                                    "name": "南京",
+                                    
+                                    "parent": 19000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 19056,
+                                    "name": "南通",
+                                    
+                                    "parent": 19000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 19057,
+                                    "name": "连云港",
+                                    
+                                    "parent": 19000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 19058,
+                                    "name": "徐州",
+                                    
+                                    "parent": 19000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 19059,
+                                    "name": "苏州",
+                                    
+                                    "parent": 19000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 19060,
+                                    "name": "宿迁",
+                                    
+                                    "parent": 19000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 19061,
+                                    "name": "泰州",
+                                    
+                                    "parent": 19000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 19062,
+                                    "name": "无锡",
+                                    
+                                    "parent": 19000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 19063,
+                                    "name": "盐城",
+                                    
+                                    "parent": 19000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 19064,
+                                    "name": "扬州",
+                                    
+                                    "parent": 19000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 19065,
+                                    "name": "镇江",
+                                    
+                                    "parent": 19000,
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": 20000,
+                            "name": "江西",
+                            
+                            "parent": 30,
+                            "children": [
+                                {
+                                    "id": 20067,
+                                    "name": "九江",
+                                    
+                                    "parent": 20000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 20068,
+                                    "name": "吉安",
+                                    
+                                    "parent": 20000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 20069,
+                                    "name": "景德镇",
+                                    
+                                    "parent": 20000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 20071,
+                                    "name": "萍乡",
+                                    
+                                    "parent": 20000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 20072,
+                                    "name": "南昌",
+                                    
+                                    "parent": 20000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 20073,
+                                    "name": "新余",
+                                    
+                                    "parent": 20000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 20074,
+                                    "name": "上饶",
+                                    
+                                    "parent": 20000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 20075,
+                                    "name": "宜春",
+                                    
+                                    "parent": 20000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 20076,
+                                    "name": "鹰潭",
+                                    
+                                    "parent": 20000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 20077,
+                                    "name": "赣州",
+                                    
+                                    "parent": 20000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 20078,
+                                    "name": "抚州",
+                                    
+                                    "parent": 20000,
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": 25000,
+                            "name": "山东",
+                            
+                            "parent": 30,
+                            "children": [
+                                {
+                                    "id": 25196,
+                                    "name": "济南",
+                                    
+                                    "parent": 25000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 25197,
+                                    "name": "济宁",
+                                    
+                                    "parent": 25000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 25198,
+                                    "name": "莱芜",
+                                    
+                                    "parent": 25000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 25199,
+                                    "name": "聊城",
+                                    
+                                    "parent": 25000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 25200,
+                                    "name": "德州",
+                                    
+                                    "parent": 25000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 25201,
+                                    "name": "临沂",
+                                    
+                                    "parent": 25000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 25202,
+                                    "name": "青岛",
+                                    
+                                    "parent": 25000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 25203,
+                                    "name": "日照",
+                                    
+                                    "parent": 25000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 25204,
+                                    "name": "潍坊",
+                                    
+                                    "parent": 25000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 25207,
+                                    "name": "淄博",
+                                    
+                                    "parent": 25000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 25208,
+                                    "name": "泰安",
+                                    
+                                    "parent": 25000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 25218,
+                                    "name": "威海",
+                                    
+                                    "parent": 25000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 25219,
+                                    "name": "烟台",
+                                    
+                                    "parent": 25000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 25220,
+                                    "name": "东营",
+                                    
+                                    "parent": 25000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 25221,
+                                    "name": "枣庄",
+                                    
+                                    "parent": 25000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 25222,
+                                    "name": "菏泽",
+                                    
+                                    "parent": 25000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 25223,
+                                    "name": "滨州",
+                                    
+                                    "parent": 25000,
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": 32000,
+                            "name": "浙江",
+                            
+                            "parent": 30,
+                            "children": [
+                                {
+                                    "id": 32272,
+                                    "name": "金华",
+                                    
+                                    "parent": 32000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 32273,
+                                    "name": "嘉兴",
+                                    
+                                    "parent": 32000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 32274,
+                                    "name": "衢州",
+                                    
+                                    "parent": 32000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 32275,
+                                    "name": "丽水",
+                                    
+                                    "parent": 32000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 32276,
+                                    "name": "宁波",
+                                    
+                                    "parent": 32000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 32277,
+                                    "name": "绍兴",
+                                    
+                                    "parent": 32000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 32278,
+                                    "name": "温州",
+                                    
+                                    "parent": 32000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 32279,
+                                    "name": "台州",
+                                    
+                                    "parent": 32000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 32280,
+                                    "name": "杭州",
+                                    
+                                    "parent": 32000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 32281,
+                                    "name": "舟山",
+                                    
+                                    "parent": 32000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 32282,
+                                    "name": "湖州",
+                                    
+                                    "parent": 32000,
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 40,
+                    "name": "华中地区",
+                    
+                    "parent": 0,
+                    "children": [
+                        {
+                            "id": 14000,
+                            "name": "河南",
+                            
+                            "parent": 40,
+                            "children": [
+                                {
+                                    "id": 14308,
+                                    "name": "焦作",
+                                    
+                                    "parent": 14000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 14309,
+                                    "name": "安阳",
+                                    
+                                    "parent": 14000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 14310,
+                                    "name": "开封",
+                                    
+                                    "parent": 14000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 14311,
+                                    "name": "洛阳",
+                                    
+                                    "parent": 14000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 14312,
+                                    "name": "漯河",
+                                    
+                                    "parent": 14000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 14313,
+                                    "name": "平顶山",
+                                    
+                                    "parent": 14000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 14314,
+                                    "name": "驻马店",
+                                    
+                                    "parent": 14000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 14315,
+                                    "name": "南阳",
+                                    
+                                    "parent": 14000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 14316,
+                                    "name": "濮阳",
+                                    
+                                    "parent": 14000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 14317,
+                                    "name": "新乡",
+                                    
+                                    "parent": 14000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 14318,
+                                    "name": "信阳",
+                                    
+                                    "parent": 14000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 14319,
+                                    "name": "许昌",
+                                    
+                                    "parent": 14000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 14320,
+                                    "name": "商丘",
+                                    
+                                    "parent": 14000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 14321,
+                                    "name": "三门峡",
+                                    
+                                    "parent": 14000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 14322,
+                                    "name": "郑州",
+                                    
+                                    "parent": 14000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 14323,
+                                    "name": "鹤壁",
+                                    
+                                    "parent": 14000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 14324,
+                                    "name": "周口",
+                                    
+                                    "parent": 14000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 14476,
+                                    "name": "济源",
+                                    
+                                    "parent": 14000,
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": 16000,
+                            "name": "湖北",
+                            
+                            "parent": 40,
+                            "children": [
+                                {
+                                    "id": 16346,
+                                    "name": "荆门",
+                                    
+                                    "parent": 16000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 16347,
+                                    "name": "荆州",
+                                    
+                                    "parent": 16000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 16348,
+                                    "name": "黄石",
+                                    
+                                    "parent": 16000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 16349,
+                                    "name": "黄冈",
+                                    
+                                    "parent": 16000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 16364,
+                                    "name": "潜江",
+                                    
+                                    "parent": 16000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 16365,
+                                    "name": "孝感",
+                                    
+                                    "parent": 16000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 16366,
+                                    "name": "恩施",
+                                    
+                                    "parent": 16000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 16367,
+                                    "name": "随州",
+                                    
+                                    "parent": 16000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 16368,
+                                    "name": "神农架",
+                                    
+                                    "parent": 16000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 16369,
+                                    "name": "十堰",
+                                    
+                                    "parent": 16000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 16370,
+                                    "name": "襄阳",
+                                    
+                                    "parent": 16000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 16371,
+                                    "name": "武汉",
+                                    
+                                    "parent": 16000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 16372,
+                                    "name": "仙桃",
+                                    
+                                    "parent": 16000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 16373,
+                                    "name": "天门",
+                                    
+                                    "parent": 16000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 16375,
+                                    "name": "咸宁",
+                                    
+                                    "parent": 16000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 16376,
+                                    "name": "宜昌",
+                                    
+                                    "parent": 16000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 16377,
+                                    "name": "鄂州",
+                                    
+                                    "parent": 16000,
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": 17000,
+                            "name": "湖南",
+                            
+                            "parent": 40,
+                            "children": [
+                                {
+                                    "id": 17350,
+                                    "name": "怀化",
+                                    
+                                    "parent": 17000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 17351,
+                                    "name": "常德",
+                                    
+                                    "parent": 17000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 17352,
+                                    "name": "长沙",
+                                    
+                                    "parent": 17000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 17353,
+                                    "name": "郴州",
+                                    
+                                    "parent": 17000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 17354,
+                                    "name": "娄底",
+                                    
+                                    "parent": 17000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 17355,
+                                    "name": "邵阳",
+                                    
+                                    "parent": 17000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 17356,
+                                    "name": "湘潭",
+                                    
+                                    "parent": 17000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 17357,
+                                    "name": "湘西",
+                                    
+                                    "parent": 17000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 17358,
+                                    "name": "张家界",
+                                    
+                                    "parent": 17000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 17359,
+                                    "name": "益阳",
+                                    
+                                    "parent": 17000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 17360,
+                                    "name": "衡阳",
+                                    
+                                    "parent": 17000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 17361,
+                                    "name": "岳阳",
+                                    
+                                    "parent": 17000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 17362,
+                                    "name": "永州",
+                                    
+                                    "parent": 17000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 17363,
+                                    "name": "株洲",
+                                    
+                                    "parent": 17000,
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 50,
+                    "name": "华南地区",
+                    
+                    "parent": 0,
+                    "children": [
+                        {
+                            "id": 4000,
+                            "name": "广东",
+                            
+                            "parent": 50,
+                            "children": [
+                                {
+                                    "id": 4082,
+                                    "name": "江门",
+                                    
+                                    "parent": 4000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 4083,
+                                    "name": "揭阳",
+                                    
+                                    "parent": 4000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 4084,
+                                    "name": "广州",
+                                    
+                                    "parent": 4000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 4085,
+                                    "name": "潮州",
+                                    
+                                    "parent": 4000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 4086,
+                                    "name": "茂名",
+                                    
+                                    "parent": 4000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 4088,
+                                    "name": "梅州",
+                                    
+                                    "parent": 4000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 4089,
+                                    "name": "清远",
+                                    
+                                    "parent": 4000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 4090,
+                                    "name": "佛山",
+                                    
+                                    "parent": 4000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 4091,
+                                    "name": "汕头",
+                                    
+                                    "parent": 4000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 4092,
+                                    "name": "汕尾",
+                                    
+                                    "parent": 4000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 4093,
+                                    "name": "深圳",
+                                    
+                                    "parent": 4000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 4094,
+                                    "name": "韶关",
+                                    
+                                    "parent": 4000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 4109,
+                                    "name": "阳江",
+                                    
+                                    "parent": 4000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 4110,
+                                    "name": "湛江",
+                                    
+                                    "parent": 4000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 4111,
+                                    "name": "云浮",
+                                    
+                                    "parent": 4000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 4112,
+                                    "name": "中山",
+                                    
+                                    "parent": 4000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 4113,
+                                    "name": "珠海",
+                                    
+                                    "parent": 4000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 4114,
+                                    "name": "肇庆",
+                                    
+                                    "parent": 4000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 4115,
+                                    "name": "河源",
+                                    
+                                    "parent": 4000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 4116,
+                                    "name": "东莞",
+                                    
+                                    "parent": 4000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 4117,
+                                    "name": "惠州",
+                                    
+                                    "parent": 4000,
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": 8000,
+                            "name": "海南",
+                            
+                            "parent": 50,
+                            "children": [
+                                {
+                                    "id": 8296,
+                                    "name": "东方",
+                                    
+                                    "parent": 8000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 8297,
+                                    "name": "琼海",
+                                    
+                                    "parent": 8000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 8298,
+                                    "name": "三亚",
+                                    
+                                    "parent": 8000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 8299,
+                                    "name": "文昌",
+                                    
+                                    "parent": 8000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 8300,
+                                    "name": "五指山",
+                                    
+                                    "parent": 8000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 8301,
+                                    "name": "万宁",
+                                    
+                                    "parent": 8000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 8302,
+                                    "name": "海口",
+                                    
+                                    "parent": 8000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 8303,
+                                    "name": "儋州",
+                                    
+                                    "parent": 8000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 8484,
+                                    "name": "定安县",
+                                    
+                                    "parent": 8000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 8485,
+                                    "name": "屯昌县",
+                                    
+                                    "parent": 8000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 8486,
+                                    "name": "陵水黎族自治县",
+                                    
+                                    "parent": 8000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 8487,
+                                    "name": "澄迈县",
+                                    
+                                    "parent": 8000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 8488,
+                                    "name": "保亭黎族苗族自治县",
+                                    
+                                    "parent": 8000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 8489,
+                                    "name": "琼中黎族苗族自治县",
+                                    
+                                    "parent": 8000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 8490,
+                                    "name": "乐东黎族自治县",
+                                    
+                                    "parent": 8000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 8491,
+                                    "name": "临高县",
+                                    
+                                    "parent": 8000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 8492,
+                                    "name": "昌江黎族自治县",
+                                    
+                                    "parent": 8000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 8493,
+                                    "name": "白沙黎族自治县",
+                                    
+                                    "parent": 8000,
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": 12000,
+                            "name": "广西",
+                            
+                            "parent": 50,
+                            "children": [
+                                {
+                                    "id": 12095,
+                                    "name": "桂林",
+                                    
+                                    "parent": 12000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 12096,
+                                    "name": "贵港",
+                                    
+                                    "parent": 12000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 12098,
+                                    "name": "防城港",
+                                    
+                                    "parent": 12000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 12099,
+                                    "name": "南宁",
+                                    
+                                    "parent": 12000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 12100,
+                                    "name": "来宾",
+                                    
+                                    "parent": 12000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 12101,
+                                    "name": "柳州",
+                                    
+                                    "parent": 12000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 12102,
+                                    "name": "钦州",
+                                    
+                                    "parent": 12000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 12103,
+                                    "name": "梧州",
+                                    
+                                    "parent": 12000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 12104,
+                                    "name": "北海",
+                                    
+                                    "parent": 12000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 12105,
+                                    "name": "玉林",
+                                    
+                                    "parent": 12000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 12106,
+                                    "name": "河池",
+                                    
+                                    "parent": 12000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 12107,
+                                    "name": "贺州",
+                                    
+                                    "parent": 12000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 12108,
+                                    "name": "百色",
+                                    
+                                    "parent": 12000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 12478,
+                                    "name": "崇左",
+                                    
+                                    "parent": 12000,
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 60,
+                    "name": "西南地区",
+                    
+                    "parent": 0,
+                    "children": [
+                        {
+                            "id": 10000,
+                            "name": "贵州",
+                            
+                            "parent": 60,
+                            "children": [
+                                {
+                                    "id": 10118,
+                                    "name": "贵阳",
+                                    
+                                    "parent": 10000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 10119,
+                                    "name": "安顺",
+                                    
+                                    "parent": 10000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 10120,
+                                    "name": "六盘水",
+                                    
+                                    "parent": 10000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 10121,
+                                    "name": "黔南",
+                                    
+                                    "parent": 10000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 10122,
+                                    "name": "黔东南",
+                                    
+                                    "parent": 10000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 10123,
+                                    "name": "黔西南",
+                                    
+                                    "parent": 10000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 10124,
+                                    "name": "毕节",
+                                    
+                                    "parent": 10000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 10125,
+                                    "name": "铜仁",
+                                    
+                                    "parent": 10000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 10126,
+                                    "name": "遵义",
+                                    
+                                    "parent": 10000,
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": 28000,
+                            "name": "四川",
+                            
+                            "parent": 60,
+                            "children": [
+                                {
+                                    "id": 28224,
+                                    "name": "广安",
+                                    
+                                    "parent": 28000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 28225,
+                                    "name": "广元",
+                                    
+                                    "parent": 28000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 28226,
+                                    "name": "成都",
+                                    
+                                    "parent": 28000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 28227,
+                                    "name": "眉山",
+                                    
+                                    "parent": 28000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 28228,
+                                    "name": "凉山",
+                                    
+                                    "parent": 28000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 28229,
+                                    "name": "绵阳",
+                                    
+                                    "parent": 28000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 28230,
+                                    "name": "攀枝花",
+                                    
+                                    "parent": 28000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 28231,
+                                    "name": "南充",
+                                    
+                                    "parent": 28000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 28232,
+                                    "name": "德阳",
+                                    
+                                    "parent": 28000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 28233,
+                                    "name": "乐山",
+                                    
+                                    "parent": 28000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 28234,
+                                    "name": "泸州",
+                                    
+                                    "parent": 28000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 28235,
+                                    "name": "内江",
+                                    
+                                    "parent": 28000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 28236,
+                                    "name": "甘孜",
+                                    
+                                    "parent": 28000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 28237,
+                                    "name": "遂宁",
+                                    
+                                    "parent": 28000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 28238,
+                                    "name": "资阳",
+                                    
+                                    "parent": 28000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 28247,
+                                    "name": "巴中",
+                                    
+                                    "parent": 28000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 28250,
+                                    "name": "达州",
+                                    
+                                    "parent": 28000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 28251,
+                                    "name": "雅安",
+                                    
+                                    "parent": 28000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 28252,
+                                    "name": "阿坝",
+                                    
+                                    "parent": 28000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 28253,
+                                    "name": "自贡",
+                                    
+                                    "parent": 28000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 28254,
+                                    "name": "宜宾",
+                                    
+                                    "parent": 28000,
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": 29000,
+                            "name": "西藏",
+                            
+                            "parent": 60,
+                            "children": [
+                                {
+                                    "id": 29268,
+                                    "name": "那曲",
+                                    
+                                    "parent": 29000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 29269,
+                                    "name": "拉萨",
+                                    
+                                    "parent": 29000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 29270,
+                                    "name": "林芝",
+                                    
+                                    "parent": 29000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 29271,
+                                    "name": "日喀则",
+                                    
+                                    "parent": 29000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 29480,
+                                    "name": "昌都",
+                                    
+                                    "parent": 29000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 29497,
+                                    "name": "山南",
+                                    
+                                    "parent": 29000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 29498,
+                                    "name": "阿里",
+                                    
+                                    "parent": 29000,
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": 31000,
+                            "name": "云南",
+                            
+                            "parent": 60,
+                            "children": [
+                                {
+                                    "id": 31283,
+                                    "name": "楚雄",
+                                    
+                                    "parent": 31000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 31284,
+                                    "name": "昆明",
+                                    
+                                    "parent": 31000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 31285,
+                                    "name": "丽江",
+                                    
+                                    "parent": 31000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 31286,
+                                    "name": "德宏",
+                                    
+                                    "parent": 31000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 31287,
+                                    "name": "临沧",
+                                    
+                                    "parent": 31000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 31288,
+                                    "name": "曲靖",
+                                    
+                                    "parent": 31000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 31289,
+                                    "name": "保山",
+                                    
+                                    "parent": 31000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 31290,
+                                    "name": "普洱",
+                                    
+                                    "parent": 31000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 31291,
+                                    "name": "文山",
+                                    
+                                    "parent": 31000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 31292,
+                                    "name": "大理",
+                                    
+                                    "parent": 31000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 31293,
+                                    "name": "红河",
+                                    
+                                    "parent": 31000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 31294,
+                                    "name": "昭通",
+                                    
+                                    "parent": 31000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 31295,
+                                    "name": "玉溪",
+                                    
+                                    "parent": 31000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 31481,
+                                    "name": "怒江",
+                                    
+                                    "parent": 31000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 31482,
+                                    "name": "迪庆",
+                                    
+                                    "parent": 31000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 31483,
+                                    "name": "西双版纳",
+                                    
+                                    "parent": 31000,
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": 33000,
+                            "name": "重庆",
+                            
+                            "parent": 60,
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "id": 70,
+                    "name": "西北地区",
+                    
+                    "parent": 0,
+                    "children": [
+                        {
+                            "id": 11000,
+                            "name": "甘肃",
+                            
+                            "parent": 70,
+                            "children": [
+                                {
+                                    "id": 11255,
+                                    "name": "酒泉",
+                                    
+                                    "parent": 11000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 11256,
+                                    "name": "金昌",
+                                    
+                                    "parent": 11000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 11257,
+                                    "name": "嘉峪关",
+                                    
+                                    "parent": 11000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 11258,
+                                    "name": "兰州",
+                                    
+                                    "parent": 11000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 11259,
+                                    "name": "陇南",
+                                    
+                                    "parent": 11000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 11260,
+                                    "name": "平凉",
+                                    
+                                    "parent": 11000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 11261,
+                                    "name": "临夏",
+                                    
+                                    "parent": 11000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 11262,
+                                    "name": "庆阳",
+                                    
+                                    "parent": 11000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 11263,
+                                    "name": "定西",
+                                    
+                                    "parent": 11000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 11264,
+                                    "name": "武威",
+                                    
+                                    "parent": 11000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 11265,
+                                    "name": "天水",
+                                    
+                                    "parent": 11000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 11266,
+                                    "name": "张掖",
+                                    
+                                    "parent": 11000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 11267,
+                                    "name": "白银",
+                                    
+                                    "parent": 11000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 11477,
+                                    "name": "甘南",
+                                    
+                                    "parent": 11000,
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": 23000,
+                            "name": "宁夏",
+                            
+                            "parent": 70,
+                            "children": [
+                                {
+                                    "id": 23170,
+                                    "name": "固原",
+                                    
+                                    "parent": 23000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 23171,
+                                    "name": "石嘴山",
+                                    
+                                    "parent": 23000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 23172,
+                                    "name": "吴忠",
+                                    
+                                    "parent": 23000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 23173,
+                                    "name": "中卫",
+                                    
+                                    "parent": 23000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 23174,
+                                    "name": "银川",
+                                    
+                                    "parent": 23000,
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": 24000,
+                            "name": "青海",
+                            
+                            "parent": 70,
+                            "children": [
+                                {
+                                    "id": 24175,
+                                    "name": "西宁",
+                                    
+                                    "parent": 24000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 24176,
+                                    "name": "海东",
+                                    
+                                    "parent": 24000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 24177,
+                                    "name": "海西",
+                                    
+                                    "parent": 24000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 24178,
+                                    "name": "玉树",
+                                    
+                                    "parent": 24000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 24479,
+                                    "name": "海南",
+                                    
+                                    "parent": 24000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 24494,
+                                    "name": "海北",
+                                    
+                                    "parent": 24000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 24495,
+                                    "name": "黄南",
+                                    
+                                    "parent": 24000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 24496,
+                                    "name": "果洛",
+                                    
+                                    "parent": 24000,
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": 27000,
+                            "name": "陕西",
+                            
+                            "parent": 70,
+                            "children": [
+                                {
+                                    "id": 27239,
+                                    "name": "宝鸡",
+                                    
+                                    "parent": 27000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 27240,
+                                    "name": "安康",
+                                    
+                                    "parent": 27000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 27241,
+                                    "name": "商洛",
+                                    
+                                    "parent": 27000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 27242,
+                                    "name": "铜川",
+                                    
+                                    "parent": 27000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 27243,
+                                    "name": "渭南",
+                                    
+                                    "parent": 27000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 27244,
+                                    "name": "西安",
+                                    
+                                    "parent": 27000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 27245,
+                                    "name": "咸阳",
+                                    
+                                    "parent": 27000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 27246,
+                                    "name": "延安",
+                                    
+                                    "parent": 27000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 27248,
+                                    "name": "汉中",
+                                    
+                                    "parent": 27000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 27249,
+                                    "name": "榆林",
+                                    
+                                    "parent": 27000,
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": 30000,
+                            "name": "新疆",
+                            
+                            "parent": 70,
+                            "children": [
+                                {
+                                    "id": 30179,
+                                    "name": "哈密",
+                                    
+                                    "parent": 30000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 30180,
+                                    "name": "博尔塔拉",
+                                    
+                                    "parent": 30000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 30181,
+                                    "name": "昌吉",
+                                    
+                                    "parent": 30000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 30182,
+                                    "name": "阿勒泰",
+                                    
+                                    "parent": 30000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 30183,
+                                    "name": "喀什",
+                                    
+                                    "parent": 30000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 30184,
+                                    "name": "克拉玛依",
+                                    
+                                    "parent": 30000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 30185,
+                                    "name": "阿克苏",
+                                    
+                                    "parent": 30000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 30186,
+                                    "name": "克孜勒苏柯尔克孜",
+                                    
+                                    "parent": 30000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 30187,
+                                    "name": "石河子",
+                                    
+                                    "parent": 30000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 30188,
+                                    "name": "塔城",
+                                    
+                                    "parent": 30000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 30189,
+                                    "name": "五家渠",
+                                    
+                                    "parent": 30000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 30190,
+                                    "name": "吐鲁番",
+                                    
+                                    "parent": 30000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 30191,
+                                    "name": "巴音郭楞",
+                                    
+                                    "parent": 30000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 30192,
+                                    "name": "乌鲁木齐",
+                                    
+                                    "parent": 30000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 30193,
+                                    "name": "伊犁",
+                                    
+                                    "parent": 30000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 30195,
+                                    "name": "和田",
+                                    
+                                    "parent": 30000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 30499,
+                                    "name": "阿拉尔",
+                                    
+                                    "parent": 30000,
+                                    "children": []
+                                },
+                                {
+                                    "id": 30500,
+                                    "name": "图木舒克",
+                                    
+                                    "parent": 30000,
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 80,
+                    "name": "其他地区",
+                    
+                    "parent": 0,
+                    "children": [
+                        {
+                            "id": 34000,
+                            "name": "香港",
+                            
+                            "parent": 80,
+                            "children": []
+                        },
+                        {
+                            "id": 35000,
+                            "name": "台湾",
+                            
+                            "parent": 80,
+                            "children": []
+                        },
+                        {
+                            "id": 36000,
+                            "name": "澳门",
+                            
+                            "parent": 80,
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "name": "国外",
+            
+            "parent": 9999999,
+            "children": [
+                {
+                    "id": 200000,
+                    "name": "日本",
+                    
+                    "parent": 1,
+                    "children": []
+                },
+                {
+                    "id": 300000,
+                    "name": "其他国家（除日本外）",
+                    
+                    "parent": 1,
+                    "children": []
+                }
+            ]
+        }
+    ]
+}
+
